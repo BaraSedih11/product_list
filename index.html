@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Heading -->
+    <header>
+      <h1>Product List</h1>
+    </header>
+
+    <!-- Filter Section -->
+    <section id="filter-section">
+      <button onclick="filterProducts('All')">All</button>
+      <button onclick="filterProducts('Electronics')">Electronics</button>
+      <button onclick="filterProducts('Clothing')">Clothing</button>
+    </section>
+
+    <!-- Product Display Area -->
+    <section id="product-list">
+      <!-- Products will be dynamically inserted here -->
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
