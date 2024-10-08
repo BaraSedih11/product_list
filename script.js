@@ -1,4 +1,3 @@
-// Define the product data
 const products = [
   { name: "Smartphone", category: "Electronics", price: 299 },
   { name: "Laptop", category: "Electronics", price: 799 },
@@ -7,17 +6,14 @@ const products = [
   { name: "Jeans", category: "Clothing", price: 50 },
 ];
 
-// Function to display products
 function displayProducts(productArray) {
   const productList = document.getElementById("product-list");
   productList.innerHTML = ""; // Clear the current list
 
   productArray.forEach((product) => {
-    // Create a container for each product
     const productItem = document.createElement("div");
     productItem.classList.add("product-item");
 
-    // Product details
     productItem.innerHTML = `
             <h3>${product.name}</h3>
             <p>Category: ${product.category}</p>
@@ -28,7 +24,6 @@ function displayProducts(productArray) {
   });
 }
 
-// Function to filter products by category
 function filterProducts(category) {
   if (category === "All") {
     displayProducts(products);
@@ -40,7 +35,6 @@ function filterProducts(category) {
   }
 }
 
-// Display all products on initial page load
 window.onload = () => {
   displayProducts(products);
 };
